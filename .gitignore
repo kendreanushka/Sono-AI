@@ -1,0 +1,30 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Uploaded files
+uploads/*
+
+# ML dataset
+ml/dataset/
+
+# Experimental model
+ml/model/breast_ultrasound_model_improved.keras
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend_old/node_modules/
+frontend_old/dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
