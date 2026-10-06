@@ -17,7 +17,14 @@ DATABASE_URL = URL.create(
     database=os.getenv("DB_NAME", "sono_ai")
 )
 
-engine = create_engine(DATABASE_URL)
+engine = create_engine(
+    DATABASE_URL,
+    connect_args={
+        "ssl": {
+            "check_hostname": True
+        }
+    }
+)
 
 SessionLocal = sessionmaker(
     autocommit=False,

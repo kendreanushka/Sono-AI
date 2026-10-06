@@ -24,6 +24,12 @@ from backend.auth import (
 
 app = FastAPI(title="Sono AI API")
 
+from backend.database import Base, engine
+from backend import models
+
+Base.metadata.create_all(bind=engine)
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
