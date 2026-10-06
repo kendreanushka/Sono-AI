@@ -5,7 +5,7 @@ import tensorflow as tf
 from PIL import Image
 
 
-MODEL_PATH = Path(__file__).parent.parent / "ml" / "model" / "breast_ultrasound_model.keras"
+MODEL_PATH = Path(__file__).parent.parent / "ml" / "model" / "efficientnet_b0_model.keras"
 
 IMAGE_SIZE = (224, 224)
 
